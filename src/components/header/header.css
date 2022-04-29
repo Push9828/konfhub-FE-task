@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito&display=swap");
+.header-container {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 2rem;
+}
+
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffdba6;
+  border-radius: 70px;
+  padding: 4rem 6rem 4rem 3rem;
+}
+
+.header-des {
+  width: 55%;
+}
+
+.header-des > h1 {
+  font-family: "Caveat Brush", cursive;
+  color: #572148;
+  font-size: 72px;
+  filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+  line-height: 30px;
+}
+
+.header-des > p {
+  font-family: "Nunito", sans-serif;
+  color: #572148;
+  font-size: 18px;
+  filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+  margin-left: 3rem;
+}
+
+@media only screen and (min-width: 1921px) {
+  .header-container {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1012px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .header-des > p {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .header-container {
+    margin: 0.5rem;
+  }
+
+  .header-des > h1 {
+    font-size: 50px;
+  }
+
+  .header-des > p {
+    text-align: center;
+  }
+}
