@@ -1,4 +1,3 @@
-import Search from "../search/search";
 import logo from "../../assets/misc/logo.svg";
 import headerimg from "../../assets/misc/header-img.svg";
 import "./header.css";
@@ -25,7 +24,6 @@ export default function Header() {
           <img src={headerimg} alt="Header Img" />
         </div>
       </div>
-      <Search />
     </div>
   );
 }

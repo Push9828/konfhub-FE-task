@@ -8,7 +8,7 @@
   width: 60%;
   background-color: #ffffff;
   border-radius: 15px;
-  transform: translate(20px, -40px) scale(1.5);
+  transform: translate(20px, -80px) scale(1.5);
   filter: drop-shadow(0 4px 4px rgb(0, 4, 15, 0.15));
 }
 
@@ -54,4 +54,20 @@
 option:not(:first-of-type) {
   color: black;
   font-size: 12px;
+}
+
+@media (max-width: 1185px) {
+  .search-container {
+    transform: translate(20px, -40px) scale(1.5);
+  }
+}
+
+@media (max-width: 660px) {
+  .search-container {
+    transform: translate(20px, -20px) scale(1.5);
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
 }

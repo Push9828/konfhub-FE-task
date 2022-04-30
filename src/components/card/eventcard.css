@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap");
+
+.event-card {
+  width: 270px;
+  height: fit-content;
+  box-shadow: 0 2px 13.57px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+}
+
+.event-card img {
+  max-width: 270px;
+}
+
+.type {
+  position: absolute;
+  z-index: 1;
+  padding: 0.8rem;
+}
+
+.event-data {
+  padding: 1rem;
+}
+
+.event-name {
+  font-family: "Prompt", sans-serif;
+  color: #141b25;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.2rem;
+}
+
+.event-info {
+  display: flex;
+  align-items: center;
+}
+
+.event-info > p {
+  font-family: "Prompt", sans-serif;
+  color: #141b25;
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

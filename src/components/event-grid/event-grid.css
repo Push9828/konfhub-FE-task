@@ -1,0 +1,41 @@
+.wrapper {
+  display: grid;
+  max-width: 1920px;
+  margin: auto;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 3rem;
+}
+
+.grid-title {
+  max-width: 1920px;
+  margin: auto;
+  width: 90%;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1442px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1004px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin-left: 10rem;
+  }
+
+  .grid-title {
+    text-align: center;
+  }
+}
