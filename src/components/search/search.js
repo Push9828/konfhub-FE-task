@@ -3,7 +3,7 @@ import "./search.css";
 
 export default function Search({ getSearch, getOption }) {
   const [text, setText] = useState("");
-  const [option, setOption] = useState(true);
+  const [option, setOption] = useState();
 
   const onChange = (q) => {
     setText(q);
