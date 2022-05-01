@@ -8,13 +8,13 @@ import "./App.css";
 export default function App() {
   const [eventData, setEventData] = useState([]);
   const [search, setSearch] = useState([]);
-  const [eventStatus, setEventStatus] = useState(true);
+  const [eventStatus, setEventStatus] = useState();
   const [limit, setLimit] = useState(16);
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=${limit}&search_query=${search}&future_events=${eventStatus}`
+        `https://iitm1blt3l.execute-api.ap-southeast-1.amazonaws.com/dev/hosted-events?limit=${limit}&search_query=${search}&past_events${eventStatus}`
       );
       setEventData(result.data.events);
     };
